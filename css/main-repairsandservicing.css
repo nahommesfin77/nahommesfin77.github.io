@@ -1,0 +1,90 @@
+.bottom-section a:hover{
+    text-decoration: underline;
+  }
+  .bottom-section a:active{
+    color:rgb(74, 75, 77);
+  }
+.center-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    font-size:20px;
+    text-align:center;
+    position:relative;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+@media (max-width:1000px){
+    .center-section{
+        display:grid;
+        grid-template-columns: 1fr;
+        font-size:20px;
+        text-align:center;
+        position:relative;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+}
+@media (min-width:1500px){
+    .center-section{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size:20px;
+        text-align:center;
+        position:relative;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+}
+.center-section div{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 300px;
+    width:500px;
+    margin:5px;
+}
+
+.center-section img{
+    height:245px;
+    width:500px;
+    object-fit:cover;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+
+.center-section p{
+    background-color: #ffffff;
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    margin:5px;
+    border-style:solid;
+    border-color:#339AF0 ;
+    box-shadow: inset #339AF0 20px 35px 25px 10px; 
+}
+.center-section div:hover p{
+    color:rgb(52, 47, 47);
+
+}
+.center-section div:hover img{
+    box-shadow: inset #ddd9d9 0px 10px 13px -8px, #ddd9d9 1px 0px 0px 0px, #ddd9d9 -1px 0px 0px 0px;
+    height:245px;
+    width:490px;
+    transition: 0.15s;
+}
+.video{
+	margin-top:15px;
+}
+.video-title{
+	font-size:20px;
+	padding-top:20px;
+}
